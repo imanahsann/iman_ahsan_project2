@@ -150,6 +150,30 @@
 }
 
 @media (max-width: 450px) {
+    // Shrink font-size
+    body {
+        @include secondaryFont(15);
+        line-height: 2.8rem;
+    }
+
+    .summary__heading {
+        @include primaryFont(32);
+        &--featured-blogs-left {
+            @include primaryFont(26);
+        }
+        &--featured-blogs-right {
+            @include primaryFont(26);
+        }
+    }
+
+    .page-summary__heading {
+        @include primaryFont(26);
+    }
+
+    .summary__link {
+        @include primaryFont(15);
+    }
+
     // Shrink header title
     .main-heading {
         @include primaryFont(60);
@@ -162,6 +186,21 @@
             bottom: 0;
             left: -15px;
         }
+    }
+
+    // Shrink padding
+    .featured-blogs {
+        padding: 0;
+    }
+
+    .featured-blog {
+        &__summary {
+            padding: 0 20px;
+        }
+    }
+
+    .wrapper {
+        width: 90%;
     }
 }
 
