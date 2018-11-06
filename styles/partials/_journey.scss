@@ -4,3 +4,27 @@
     padding: 130px 0 75px 0;
     margin: 0;
 }
+
+.wrapper-journey {
+    display: flex;
+}
+
+.collage {
+    &--journey {
+        background: $greenGrey;
+        width: 25%;
+        height: 0%;
+        bottom: 0;
+    }
+}
+
+.summary {
+    &--journey {
+        width: 75%;
+        text-align: left;
+        padding-left: 80px;
+    }
+    &__heading--journey {
+        margin-top: 0;
+    }
+}
