@@ -61,14 +61,11 @@ body {
 .summary__heading {
     @include primaryFont(42);
     text-transform: uppercase;
-    text-align: center;
     &--featured-blogs-left {
         @include primaryFont(32);
-        text-align: left;
     }
     &--featured-blogs-right {
         @include primaryFont(32);
-        text-align: right;
     }
     &--journey {
         text-align: left;
