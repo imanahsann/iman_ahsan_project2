@@ -121,7 +121,7 @@
         }
     }
 
-    // Reposition Gallery Images
+    // Reposition gallery images
     .gallery {
         &__gallery-row {
             flex-direction: column;
@@ -138,6 +138,11 @@
                 width: 100%;
             }
         }
+    }
+
+    // Reposition page summaries in footer
+    .page-summary {
+        width: 100%;
     }
 }
 
@@ -260,6 +265,23 @@
 
     .wrapper {
         width: 90%;
+    }
+
+    // Shrink footer icons
+    .page-summary {
+        &__icon {
+            font-size: 2rem;
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+            padding-top: 7px;
+        }
+        &__text {
+            padding-left: 20px;
+        }
+        &__heading {
+            margin-top: 7px;
+        }
     }
 }
 
