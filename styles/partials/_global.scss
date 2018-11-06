@@ -1,0 +1,109 @@
+// Global styles
+
+// Variables
+$primaryColor: #1f1f1f;
+$secondaryColor: #345231;
+$accentColor: #e4a436;
+$greenGrey: #709b6b;
+$whiteShade: #f6f6f6;
+
+// Mix-ins
+@mixin primaryFont($fontSize) {
+    font-size: $fontSize * 1px;
+    font-size: ($fontSize/10) * 1rem;
+    text-transform: uppercase;
+    font-family: "Abril Fatface", cursive;
+    color: $primaryColor;
+}
+
+@mixin secondaryFont($fontSize) {
+    font-size: $fontSize * 1px;
+    font-size: ($fontSize/10) * 1rem;
+    color: $primaryColor;
+    font-family: "Montserrat", sans-serif;
+}
+
+// Layout
+html {
+    font-size: 62.5%;
+    // 10px
+}
+
+body {
+    color: $primaryColor;
+    @include secondaryFont(20);
+    line-height: 3.2rem;
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+// Typography
+
+// Headings
+.main-heading {
+    @include primaryFont(130);
+    text-transform: uppercase;
+    line-height: 9.2rem;
+    color: $whiteShade;
+}
+
+.secondary-heading {
+    @include primaryFont(80);
+    text-transform: uppercase;
+    line-height: 9.2rem;
+    color: $whiteShade;
+}
+
+.summary__heading {
+    @include primaryFont(42);
+    text-transform: uppercase;
+    text-align: center;
+    &--featured-blogs-left {
+        @include primaryFont(32);
+        text-align: left;
+    }
+    &--featured-blogs-right {
+        @include primaryFont(32);
+        text-align: right;
+    }
+    &--journey {
+        text-align: left;
+    }
+}
+
+.page-summary__heading {
+    @include primaryFont(32);
+    text-align: left;
+}
+
+// Buttons
+.summary__link {
+    @include primaryFont(20);
+    line-height: 3.2rem;
+    text-decoration: none;
+    background: $accentColor;
+    padding: 15px;
+    margin: 15px 0;
+    display: inline-block;
+}
+
+// Navigation
+.nav__item__link {
+    @include secondaryFont(20);
+    line-height: 2.9rem;
+    font-weight: 700;
+    color: $whiteShade;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 20px;
+    &:hover {
+        color: $accentColor;
+    }
+    &--active {
+        color: $accentColor;
+    }
+}

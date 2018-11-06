@@ -1,0 +1,66 @@
+// Featured Blog Styles
+.featured-blogs {
+    background: #fff;
+    padding: 50px 0;
+    margin: 0;
+}
+
+// Individual Blog Container (Image and Text)
+.featured-blog {
+    width: 100%;
+    display: flex;
+    &__collage {
+        width: 50%;
+    }
+    &__summary {
+        width: 50%;
+    }
+}
+
+.featured-blog__summary {
+    max-width: 640px;
+    padding: 0 80px;
+    margin-top: 45px;
+}
+
+// Blog on Left Side
+.collage {
+    &--featured-blogs-left {
+        background: $greenGrey;
+        text-align: right;
+        margin-left: 0;
+        bottom: 0;
+        top: -90px;
+    }
+    &__image--featured-blogs-left {
+        max-width: 640px;
+        position: relative;
+        top: -20px;
+        right: 20px;
+    }
+}
+
+.summary--featured-blogs-left {
+    text-align: left;
+}
+
+// Blog on Right Side
+.collage {
+    &--featured-blogs-right {
+        background: $secondaryColor;
+        text-align: left;
+        margin-left: 0;
+        bottom: -90px;
+    }
+
+    &__image--featured-blogs-right {
+        max-width: 640px;
+        position: relative;
+        top: -20px;
+        left: -20px;
+    }
+}
+
+.summary--featured-blogs-right {
+    text-align: right;
+}

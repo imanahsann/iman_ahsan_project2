@@ -1,0 +1,79 @@
+// Header Styles
+.header {
+    background: $secondaryColor;
+}
+
+// Menu
+.hidden {
+    display: none;
+    font-size: 4rem;
+    padding-top: 15px;
+    color: $whiteShade;
+    position: relative;
+    z-index: 5000;
+}
+
+.toggle-icon {
+    cursor: pointer;
+}
+
+input#toggle {
+	display: none;
+}
+
+.nav {
+    &__list {
+        margin: 0;
+        padding: 20px 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li:nth-child(2)::after {
+            content: "Willow";
+            @include primaryFont(42);
+            line-height: 2.9rem;
+            text-transform: uppercase;
+            text-align: center;
+            color: $whiteShade;
+            padding: 0 15px;
+        }
+    }
+    &__item {
+        display: flex;
+    }
+}
+
+// Hero
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-heading {
+    padding-left: 10px;
+    margin-right: 15px;
+    position: relative;
+    &__curved-text {
+        width: 20%;
+        position: absolute;
+        left: -30px;
+        bottom: -20px;
+    }
+}
+
+// Collage
+
+.collage {
+    background: white;
+    margin-left: 20px;
+    position: relative;
+    bottom: -70px;
+    &__image {
+        width: 100%;
+        position: relative;
+        top: -20px;
+        left: -20px;
+    }
+}
