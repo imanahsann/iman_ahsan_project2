@@ -28,7 +28,6 @@
             margin-top: 0;
         }
     }
-
     .collage {
         &--featured-blogs-left {
             top: 0;
@@ -38,7 +37,6 @@
             bottom: 0;
         }
     }
-
     .summary {
         &__heading {
             &--featured-blogs-left, &--featured-blogs-right {
@@ -53,11 +51,26 @@
             width: 50%;
         }
     }
-
     .summary {
         &--journey {
             width: 50%;
         }
+    }
+}
+
+@media (max-width: 1060px) {
+    // Shrink social media icons
+    .social__icon {
+        font-size: 2rem;
+        padding-right: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 1100px) {
+    // Shrink headings on pages
+    .main-heading--page {
+        line-height: 5.9rem;
     }
 }
 
@@ -74,24 +87,16 @@
         &--page {
             @include primaryFont(80);
             text-transform: uppercase;
-            line-height: 6.2rem;
+            line-height: 5.7rem;
             color: $whiteShade;
             margin: 0;
             padding: 0;
         }
     }
 
+    // Increase wrapper on pages
     .wrapper--page {
         width: 90%;
-    }
-}
-
-@media (max-width: 935px) {
-    // Shrink social media icons
-    .social__icon {
-        font-size: 2rem;
-        padding-right: 15px;
-        margin-bottom: 15px;
     }
 }
 
@@ -101,38 +106,32 @@
         flex-direction: column;
         margin: 20px auto;
     }
-
     .aside, .main-page {
         width: 100%;
     }
-
     .main-page {
         margin-bottom: 40px;
     }
-
     .aside {
         margin-right: 0;
     }
-
     .aside-contact {
         text-align: center;
     }
+    .footer-page {
+        padding: 0;
+    }
 
+    // Change blog page orientation
     .aside-blog {
         display: flex;
         flex-direction: row;
     }
-
     .aside-section--blog {
         width: calc( 50% - 10px );
     }
-
     .aside-blog div:nth-child(odd) {
         margin-right: 20px;
-    }
-
-    .footer-page {
-        padding: 0;
     }
 
     // Social back to normal size
@@ -141,6 +140,9 @@
             font-size: 3rem;
             padding-right: 25px;
             margin-bottom: 20px;
+        }
+        & a:last-child i {
+            padding-right: 0;
         }
     }
 }
@@ -178,19 +180,15 @@
             width: 100%;
         }
     }
-
     .featured-blogs div:nth-child(even) {
         flex-direction: column-reverse;
     }
-
     .blog-container {
         margin-top: 60px;
     }
-
     .blog-container--right {
         flex-direction: row;
     }
-
     .summary--featured-blogs-right {
         text-align: left;
     }
@@ -199,13 +197,11 @@
     .wrapper-journey {
         flex-direction: column;
     }
-
     .collage {
         &--journey {
             width: 100%;
         }
     }
-
     .summary {
         &--journey {
             width: 100%;
@@ -244,18 +240,15 @@
     body {
         overflow-x: hidden;
     }
-
     .collage--header {
         display: none;
     }
-
     .main-heading {
         margin-left: 70px;
         &--page {
             margin-left: 0;
         }
     }
-
     .nav {
         position: absolute;
         height: 100vh;
@@ -281,35 +274,32 @@
             }
         }
     }
-
     .hidden {
             display: inline-block;
     }
-
     input#toggle:checked + .nav {
 	        right: 0;
     }
-
     .about {
         padding: 50px 0;
     }
 }
 
 @media (max-width: 700px) {
+    // Reposition sections in aside on blog page
     .aside-blog {
         flex-direction: column;
     }
-
     .aside-section--blog {
         width: 100%;
     }
-
     .aside-blog div:nth-child(odd) {
         margin-right: 0;
     }
 }
 
 @media (max-width: 600px) {
+    // Hide featured image on smaller screens
     .featured-image {
         display: none;
     }
@@ -329,7 +319,6 @@
         @include secondaryFont(15);
         line-height: 2.8rem;
     }
-
     .summary__heading {
         @include primaryFont(32);
         &--featured-blogs-left {
@@ -339,11 +328,9 @@
             @include primaryFont(26);
         }
     }
-
     .page-summary__heading {
         @include primaryFont(26);
     }
-
     .summary__link {
         @include primaryFont(15);
     }
@@ -369,13 +356,13 @@
     .featured-blogs {
         padding: 0;
     }
-
     .featured-blog {
         &__summary {
             padding: 0 20px;
         }
     }
 
+    // Shrink wrapper
     .wrapper {
         width: 90%;
     }
@@ -399,6 +386,7 @@
 }
 
 @media (max-width: 420px) {
+    // Reposition comment avatar and text
     .comments {
         &__comment {
             flex-direction: column;
@@ -423,6 +411,7 @@
         }
     }
 
+    // Shrink nav text
     .hidden {
         font-size: 3rem;
     }

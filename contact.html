@@ -39,9 +39,12 @@
         <main class="main main-page">
             <form class="comment-form comment-form--contact" action="#" method="POST" name="comment-form">
                 <div class="comment-form__user">
+                    <label for="name" class="visuallyhidden">Name</label>
                     <input type="text" class="comment-form__name" name="name" placeholder="Name" required="true">
+                    <label for="email" class="visuallyhidden">Email address</label>
                     <input type="email" class="comment-form__email" name="email" placeholder="Email address" required="true">
                 </div>
+                <label for="comment" class="visuallyhidden">Message</label>
                 <textarea name="comment" class="comment-form__comment" placeholder="Message"></textarea>
                 <input type="submit" class="comment-form__post-comment" value="Submit">
             </form>
