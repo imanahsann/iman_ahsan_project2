@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Willow | Blog</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="wrapper">
+            <!-- Main Navigation -->
+            <div class="hidden">
+                <label for="toggle" class="toggle-icon"><i class="fas fa-bars"></i></label>
+            </div>
+            <input type="checkbox" id="toggle" name="toggle">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__item__link">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__item__link">About</a></li>
+                    <li class="nav__item"><a href="blog.html" class="nav__item__link nav__item__link--active">Blog</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__item__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-container header-container--page">
+            <!-- Main Heading Text -->
+            <div class="wrapper">
+                <h1 class="main-heading main-heading--page">Blog & News</h1>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper wrapper--page">
+        <main class="main main-page">
+            <div class="blog-post">
+                <h2 class="blog-post__title secondary-heading">
+                    My Favourite Travel Destinations
+                </h2>
+                <p class="blog-post__byline">
+                    Monday October 8, 2018 by Willow
+                </p>
+                <p class="blog-post__content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore totam, doloribus est facilis molestiae repudiandae aliquid earum perspiciatis voluptatibus non esse accusamus dicta delectus, blanditiis nobis. Fugiat autem neque laborum.
+                    Illo autem harum corporis consequuntur. Corporis quidem consectetur maxime quae exercitationem voluptate, dolor dignissimos dolores minima rem eos repudiandae iusto. Pariatur, nam dignissimos sit mollitia deserunt asperiores tempora nulla. Consectetur.
+                    Quos asperiores tenetur dolorem quis accusantium aut, nihil, illum voluptatum, molestias consectetur ut atque? Eum, quaerat? Quia quaerat rem a fugit excepturi explicabo sequi nam provident. Quaerat velit ullam aut!
+                    Non, dolores! Deserunt, nostrum aliquid nisi pariatur quos quidem illum culpa voluptas nihil ab quis autem adipisci consequatur. Non animi recusandae deserunt consequuntur at totam, reiciendis commodi molestiae error harum?
+                    Tempora consectetur quos, eos, velit iure ratione ducimus incidunt soluta, quis porro maxime in! Ipsa assumenda tenetur officiis ducimus saepe quidem ea. Earum deleniti repellendus quis culpa quas assumenda ipsam.
+                    Exercitationem eveniet ab, tenetur optio eius dignissimos dicta ipsam commodi sequi sed tempore officiis provident earum nemo nisi architecto eligendi harum quos quasi accusamus illo reprehenderit id ut fugit? Eveniet.
+                </p>
+            </div>
+            <div class="comments">
+                <div class="comments__comment">
+                    <div class="comments__avatar">
+                        <img src="./assets/blog-image-3.jpg" alt="Barb" class="comments__avatar__image">
+                    </div>
+                    <div class="comments__text">
+                        <p class="comments__text__byline">
+                            Tuesday October 9, 2018 by Barb
+                        </p>
+                        <p class="comment__text__content">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro repudiandae cupiditate dignissimos harum! Repellendus alias hic, eligendi voluptatem esse temporibus commodi eaque quis sed, quia, aperiam magnam molestias reprehenderit quasi consequuntur fugit.
+                        </p>
+                    </div>
+                </div>
+                <div class="comments__comment">
+                    <div class="comments__avatar">
+                        <img src="./assets/blog-image-4.jpg" alt="Daisy" class="comments__avatar__image">
+                    </div>
+                    <div class="comments__text">
+                        <p class="comments__text__byline">
+                            Wednesday October 10, 2018 by Daisy
+                        </p>
+                        <p class="comment__text__content">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi neque assumenda dolores velit asperiores officiis laboriosam iure, consequatur id corrupti ipsa nam natus sit. Deleniti.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <form class="comment-form" action="#" method="POST" name="comment-form">
+                <div class="comment-form__user">
+                    <input type="text" class="comment-form__name" name="name" placeholder="Name" required="true">
+                    <input type="email" class="comment-form__email" name="email" placeholder="Email address" required="true">
+                </div>
+                <textarea name="comment" placeholder="Comment" class="comment-form__comment"></textarea>
+                <input type="submit" class="comment-form__post-comment" value="Post Comment">
+            </form>
+        </main>
+        <aside class="aside aside-blog">
+            <div class="aside-section">
+                <img src="./assets/blog-image-2.jpg" alt="Willow" class="aside-section__image">
+                <h2 class="aside-section__heading">
+                    About Willow
+                </h2>
+                <div class="aside-section__content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae beatae natus mollitia repudiandae dicta. <a
+                        href="#" class="aside-section__link">Find out more.</a></p>
+                </div>
+            </div>
+            <div class="aside-section">
+                <h2 class="aside-section__heading">
+                    Recent Posts
+                </h2>
+                <div class="aside-section__content">
+                    <ul class="aside-section__list">
+                        <li class="aside-section__list-item"><a href="#" class="aside-section__list-link">Lorem ipsum dolor sit</a></li>
+                        <li class="aside-section__list-item"><a href="#" class="aside-section__list-link">Lorem ipsum dolor sit</a></li>
+                        <li class="aside-section__list-item"><a href="#" class="aside-section__list-link">Lorem ipsum dolor sit</a></li>
+                        <li class="aside-section__list-item"><a href="#" class="aside-section__list-link">Lorem ipsum dolor sit</a></li>
+                    </ul>
+                </p>
+            </div>
+        </aside>
+    </div>
+    <footer class="footer footer--page">
+        <!-- Full Width Copyright Banner -->
+        <div class="copyright-bar">
+            <p class="copyright-bar__paragraph">
+                Copyright &copy; 2018 HackerYou
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -30,6 +30,7 @@ html {
 }
 
 body {
+    background: $whiteShade;
     color: $primaryColor;
     @include secondaryFont(20);
     line-height: 3.2rem;
@@ -49,13 +50,26 @@ body {
     text-transform: uppercase;
     line-height: 9.2rem;
     color: $whiteShade;
+    &--page {
+        @include primaryFont(80);
+        text-transform: uppercase;
+        line-height: 6.2rem;
+        color: $whiteShade;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .secondary-heading {
-    @include primaryFont(80);
+    @include primaryFont(32);
     text-transform: uppercase;
-    line-height: 9.2rem;
-    color: $whiteShade;
+    line-height: 4rem;
+}
+
+.aside-section__heading {
+    @include primaryFont(24);
+    text-transform: uppercase;
+    line-height: 3rem;
 }
 
 .summary__heading {

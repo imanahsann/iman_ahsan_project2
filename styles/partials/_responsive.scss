@@ -11,6 +11,14 @@
         &__curved-text {
             bottom: -10px;
         }
+        &--page {
+            @include primaryFont(80);
+            text-transform: uppercase;
+            line-height: 6.2rem;
+            color: $whiteShade;
+            margin: 0;
+            padding: 0;
+        }
     }
 
     // Reposition blog posts
@@ -63,6 +71,27 @@
         &__curved-text {
             bottom: -5px;
         }
+        &--page {
+            @include primaryFont(80);
+            text-transform: uppercase;
+            line-height: 6.2rem;
+            color: $whiteShade;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .wrapper--page {
+        width: 90%;
+    }
+}
+
+@media (max-width: 935px) {
+    // Shrink social media icons
+    .social__icon {
+        font-size: 2rem;
+        padding-right: 15px;
+        margin-bottom: 15px;
     }
 }
 
@@ -76,6 +105,20 @@
         &__curved-text {
             bottom: 5px;
         }
+        &--page {
+            @include primaryFont(60);
+            text-transform: uppercase;
+            line-height: 4.6rem;
+            color: $whiteShade;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+    }
+
+    // Reposition page titles
+    .header-container--page {
+        align-items: center;
     }
 
     // Reposition blog posts
@@ -146,6 +189,39 @@
     }
 }
 
+@media (max-width: 800px) {
+    // Change Page Orientation
+    .wrapper--page {
+        flex-direction: column;
+        margin: 20px auto;
+    }
+
+    .aside, .main-page {
+        width: 100%;
+    }
+
+    .main-page {
+        margin-bottom: 40px;
+    }
+
+    .aside {
+        text-align: center;
+    }
+
+    .footer-page {
+        padding: 0;
+    }
+
+    // Social back to normal size
+    .social {
+        &__icon {
+            font-size: 3rem;
+            padding-right: 25px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
 @media (max-width: 720px) {
     // Hide header image and nav
     body {
@@ -158,12 +234,15 @@
 
     .main-heading {
         margin-left: 70px;
+        &--page {
+            margin-left: 0;
+        }
     }
 
     .nav {
         position: absolute;
         height: 100vh;
-        background: linear-gradient( rgba(0,0,0,0.4), rgba(0,0,0,0.4) ), url(/assets/home-image-1.jpg);
+        background: linear-gradient( rgba(0,0,0,0.4), rgba(0,0,0,0.4) ), url(../assets/home-image-1.jpg);
         background-size: cover;
         background-position: center;
         z-index: 1000;
@@ -187,7 +266,7 @@
     }
 
     .hidden {
-            display: block;
+            display: inline-block;
     }
 
     input#toggle:checked + .nav {
@@ -249,6 +328,9 @@
         &__curved-text {
             bottom: 0;
             left: -15px;
+        }
+        &--page {
+            margin-left: 0;
         }
     }
 

@@ -7,7 +7,7 @@
 .hidden {
     display: none;
     font-size: 4rem;
-    padding-top: 15px;
+    padding: 15px 0;
     color: $whiteShade;
     position: relative;
     z-index: 5000;
@@ -49,6 +49,21 @@ input#toggle {
     display: flex;
     justify-content: center;
     align-items: center;
+    &--page {
+        justify-content: flex-start;
+        align-items: flex-end;
+        height: 45vh;
+        background: url(../assets/blog-image-1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        &--contact {
+            background: url(../assets/contact-image-1.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
 }
 
 .main-heading {
@@ -60,6 +75,9 @@ input#toggle {
         position: absolute;
         left: -30px;
         bottom: -20px;
+    }
+    &--page {
+        margin-left: 0;
     }
 }
 

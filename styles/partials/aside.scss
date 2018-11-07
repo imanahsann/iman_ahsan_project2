@@ -1,0 +1,45 @@
+// Aside Styles
+.aside-section {
+    background: #fff;
+    padding: 40px;
+    margin-bottom: 40px;
+    &__image {
+        width: 100%;
+    }
+    &__link {
+        color: $greenGrey;
+        text-decoration: none;
+        font-weight: 700;
+        &--social {
+            color: $primaryColor;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+    }
+    &__list {
+        padding-left: 15px;
+    }
+    &__list-item {
+        font-size: 1rem;
+    }
+    &__list-link {
+        font-size: 2rem;
+        text-decoration: none;
+        color: $primaryColor;
+    }
+}
+
+.social {
+    &__icon {
+        font-size: 3rem;
+        padding-right: 25px;
+        margin-bottom: 20px;
+        color: $secondaryColor;
+    }
+}
+
+.contact-paragraph {
+    margin: 0;
+    padding: 0;
+    line-height: 2.8rem;
+}
