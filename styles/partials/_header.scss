@@ -29,19 +29,28 @@ input#toggle {
         display: flex;
         justify-content: center;
         align-items: center;
-        li:nth-child(2)::after {
-            content: "Willow";
+        li:nth-child(3) a {
             @include primaryFont(42);
             line-height: 2.9rem;
             text-transform: uppercase;
             text-align: center;
             color: $whiteShade;
             padding: 0 15px;
+            &:hover {
+                color: $accentColor;
+            }
+            &.nav__item__link--active {
+                color: $accentColor;
+            }
         }
     }
     &__item {
         display: flex;
     }
+}
+
+.nav__item--home {
+    display: none;
 }
 
 // Hero

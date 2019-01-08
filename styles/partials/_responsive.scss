@@ -268,11 +268,13 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            li:nth-child(2)::after {
-                content: "";
-                padding: 0;
-            }
         }
+    }
+    .nav__item--home {
+        display: inline-block;
+    }
+    .nav__item--willow {
+        display: none;
     }
     .hidden {
             display: inline-block;
