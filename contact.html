@@ -16,7 +16,7 @@
         <div class="wrapper">
             <!-- Main Navigation -->
             <div class="hidden">
-                <label for="toggle" class="toggle-icon"><i class="fas fa-bars"></i></label>
+                <label for="toggle" class="toggle-icon" id="burger"><i class="fas fa-bars"></i></label>
             </div>
             <input type="checkbox" id="toggle" name="toggle">
             <nav class="nav">
@@ -37,7 +37,7 @@
     </header>
     <div class="wrapper wrapper--page">
         <main class="main main-page">
-            <form class="comment-form comment-form--contact" action="#" method="POST" name="comment-form">
+            <form class="comment-form comment-form--contact" action="javascript:void(0);" method="POST" name="comment-form">
                 <div class="comment-form__user">
                     <label for="name" class="visuallyhidden">Name</label>
                     <input type="text" class="comment-form__name" name="name" placeholder="Name" required="true">
@@ -73,9 +73,13 @@
         <!-- Full Width Copyright Banner -->
         <div class="copyright-bar">
             <p class="copyright-bar__paragraph">
-                Copyright &copy; 2018 HackerYou
             </p>
         </div>
     </footer>
+    <script>
+        document.getElementById('burger').addEventListener('click', function () {
+            document.getElementsByTagName("HTML")[0].classList.toggle('disable-scroll');
+        });
+    </script>
 </body>
 </html>

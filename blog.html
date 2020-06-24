@@ -16,7 +16,7 @@
         <div class="wrapper">
             <!-- Main Navigation -->
             <div class="hidden">
-                <label for="toggle" class="toggle-icon"><i class="fas fa-bars"></i></label>
+                <label for="toggle" class="toggle-icon" id="burger"><i class="fas fa-bars"></i></label>
             </div>
             <input type="checkbox" id="toggle" name="toggle">
             <nav class="nav">
@@ -123,9 +123,13 @@
         <!-- Full Width Copyright Banner -->
         <div class="copyright-bar">
             <p class="copyright-bar__paragraph">
-                Copyright &copy; 2018 HackerYou
             </p>
         </div>
     </footer>
+    <script>
+        document.getElementById('burger').addEventListener('click', function () {
+            document.getElementsByTagName("HTML")[0].classList.toggle('disable-scroll');
+        });
+    </script>
 </body>
 </html>

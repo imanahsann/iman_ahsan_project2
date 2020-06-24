@@ -24,6 +24,10 @@ $whiteShade: #f6f6f6;
 }
 
 // Layout
+html, body {
+    overflow-x: hidden;
+}
+
 html {
     font-size: 62.5%;
     // 10px
@@ -34,6 +38,12 @@ body {
     color: $primaryColor;
     @include secondaryFont(20);
     line-height: 3.2rem;
+    position: relative;
+    width: 100%;
+}
+
+html.disable-scroll {
+    overflow: hidden;
 }
 
 .wrapper {
